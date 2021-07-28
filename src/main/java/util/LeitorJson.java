@@ -21,9 +21,10 @@ public class LeitorJson {
 	}
 
 	public static void gravaArquivoJson() throws IOException {
-		mapJson.put("url", "http://www.google.com.br");
-		mapJson.put("curso", "testes automatizados api");
-		mapJson.put("endereço", "carlos lacerda, 57 ");
+		mapJson.put("url", "http://www.amazon.com");
+		mapJson.put("product", "drone");
+		mapJson.put("color", "black");
+		mapJson.put("value", "expensive");
 
 		FileWriter writer = new FileWriter("./src/main/resources/MassaTeste_writer.json");
 		gson.toJson(mapJson, writer);
@@ -37,8 +38,6 @@ public class LeitorJson {
 		System.out.println(mapJson.get("nome"));
 		System.out.println(mapJson.get("cor"));
 		System.out.println(mapJson.get("produto"));
-
-		// TODO Auto-generated method stub
 
 	}
 
